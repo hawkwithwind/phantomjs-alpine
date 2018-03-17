@@ -1,0 +1,3 @@
+FROM alpine
+ADD dockerized-phantomjs.tar.gz /
+ENTRYPOINT ["/usr/local/bin/phantomjs"]

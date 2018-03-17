@@ -9,9 +9,20 @@
 * dustinblackman phantomized https://github.com/dustinblackman/phantomized
 
 # Build
+出于国内网络环境考虑，phantomjs源码的clone单独处理，需要将源码放置在本项目根目录下，构建时，会将该源码目录加入镜像中进行编译
+
 ```
 ./get_phantomjs.sh
-docker build -t pahtomjs:build .
+./run-dockerize.sh
 ```
+
+# Other Trials
+* build directly upon alpine, does not work
+测试了以下项目，不成功，在alpine:3.3上无法运行最基本的 hello, world
+- https://github.com/ncopa/docker-phantomjs-alpine
+
+相关的issue
+- https://bugs.alpinelinux.org/issues/4664
+- https://github.com/ariya/phantomjs/issues/14186
 
 
