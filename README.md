@@ -7,3 +7,11 @@
 * larsks dockerize https://github.com/larsks/dockerize 
 * fgrehm docker pahntomjs2 https://github.com/fgrehm/docker-phantomjs2
 * dustinblackman phantomized https://github.com/dustinblackman/phantomized
+
+# Build
+```
+./get_phantomjs.sh
+docker build -t pahtomjs:build .
+```
+
+

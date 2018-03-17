@@ -13,7 +13,7 @@ ENV buildDependencies\
 ENV phantomJSDependencies\
   libicu-dev libfontconfig1 libjpeg-dev libfreetype6\
   libssl-dev libpng-dev\
-  python python-pip curl rsync xfonts-base ttf-mscorefonts-installer
+  python python-pip curl rsync xfonts-base binutils
 
 # Installing phantomjs
 RUN \
