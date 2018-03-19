@@ -12,8 +12,8 @@
 出于国内网络环境考虑，phantomjs源码的clone单独处理，需要将源码放置在本项目根目录下，构建时，会将该源码目录加入镜像中进行编译
 
 ```
-./get_phantomjs.sh
-./run-dockerize.sh
+./get_phantomjs_2.1.1.sh
+./run-dockerize-2.1.1.sh
 ```
 
 # Other Trials
