@@ -18,6 +18,7 @@
 
 # Other Trials
 ## build directly upon alpine, does not work
+
 测试了以下项目，不成功，在alpine:3.3上无法运行最基本的 hello, world
 - https://github.com/ncopa/docker-phantomjs-alpine
 
