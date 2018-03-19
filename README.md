@@ -25,4 +25,3 @@
 - https://bugs.alpinelinux.org/issues/4664
 - https://github.com/ariya/phantomjs/issues/14186
 
-

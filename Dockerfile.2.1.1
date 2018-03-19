@@ -6,14 +6,20 @@ COPY phantomjs /usr/src/phantomjs
 
 # Dependencies we just need for building phantomjs
 ENV buildDependencies\
-    wget unzip build-essential g++ flex bison gperf\
+    wget unzip build-essential g++ flex bison gperf git\
     ruby perl libsqlite3-dev libfontconfig1-dev 
 
 # Dependencies we need for running phantomjs
 ENV phantomJSDependencies\
   libicu-dev libfontconfig1 libjpeg-dev libfreetype6\
   libssl-dev libpng-dev libx11-dev libxext-dev\
+  ttf-mscorefonts-installer\
   python python-pip curl rsync xfonts-base binutils
+
+# quietly accept msfonts eula
+RUN \
+    echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true \
+    | debconf-set-selections
 
 # Installing phantomjs
 RUN \

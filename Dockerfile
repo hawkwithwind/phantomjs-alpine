@@ -7,7 +7,7 @@ COPY phantomjs /usr/src/phantomjs
 # Dependencies we just need for building phantomjs
 ENV buildDependencies\
     wget unzip build-essential g++ flex bison gperf\
-    ruby perl libsqlite3-dev libfontconfig1-dev 
+    ruby perl libsqlite3-dev libfontconfig1-dev
 
 # Dependencies we need for running phantomjs
 ENV phantomJSDependencies\
